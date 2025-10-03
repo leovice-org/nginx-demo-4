@@ -1,0 +1,9 @@
+apiVersion: core.krateo.io/v1alpha1
+kind: CompositionDefinition
+metadata:
+  name: nginx-cd
+  namespace: krateo-system
+spec:
+  chart:
+    url: oci://ghcr.io/leovice-org/nginx-demo-4/nginx-cd
+    version: "0.1.0"
